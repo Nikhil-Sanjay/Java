@@ -19,13 +19,14 @@ class Composition1 {
         Customer c=new Customer(c_name,num,room_no);
         al.add(new PG(pg_name,pg_id,c));
         }
-            for(int i=0;i<al.size();i++){
+        for(int i=0;i<al.size();i++){
             System.out.println("Name of the PG : "+al.get(i).name);
             System.out.println("ID of the PG : "+al.get(i).id);
             Customer c=al.get(i).c;
             System.out.println("Name of the Customer : "+c.name);
             System.out.println("Phone number of the Customer : "+c.phone_no);
             System.out.println("Room number of thee customer : "+c.room_no);
+            
         }
     }
 }
