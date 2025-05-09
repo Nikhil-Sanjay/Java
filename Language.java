@@ -1,4 +1,4 @@
-import javapack.Movie;
+import myjavapack.Movie;
 public class Language extends Movie{
 	public String name,genre,lang;
 	int collection,year;
