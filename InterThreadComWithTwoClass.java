@@ -1,6 +1,10 @@
 class User {
+	User(){};
+	String email,password;	
     synchronized public void passCheck(String email, String password) {
         try {
+        	this.email=email;
+		this.password=password;
             System.out.println("User waiting for authentication...");
             wait();  
         } catch (Exception e) {
@@ -47,4 +51,3 @@ public class InterThreadComWithTwoClass {
         adminThread.start();
     }
 }
-
